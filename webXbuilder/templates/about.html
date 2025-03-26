@@ -1,0 +1,187 @@
+{% extends 'basic.html' %}
+{% block title %} About {% endblock title %}
+
+{% block body %}
+{% load static %}
+
+<style>
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+  }
+  
+  .about-section {
+    padding: 50px 0;
+    background: #fff;
+  }
+
+  .section-title h2 {
+    text-align: center;
+    font-size: 36px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+  }
+
+  .about-content {
+    text-align: center;
+    font-size: 20px;
+    color: #555;
+  }
+
+  .projects a {
+    display: block;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    color: darkblue;
+    margin-top: 10px;
+    text-decoration: none;
+    transition: 0.3s;
+  }
+
+  .projects a:hover {
+    color: #ff6600;
+    text-decoration: underline;
+  }
+
+  .social-icons a {
+    font-size: 30px;
+    margin: 10px;
+    color: #333;
+    transition: 0.3s;
+  }
+
+  .social-icons a:hover {
+    color: #ff6600;
+  }
+
+  .experience {
+    background: #e9ecef;
+    padding: 30px;
+    border-radius: 10px;
+  }
+
+  .experience h3 {
+    color: #007bff;
+    font-size: 22px;
+    margin-top: 15px;
+  }
+
+  .scroll-box {
+    height: 300px;
+    overflow-y: auto;
+    background: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+  }
+
+  .info-box {
+    margin-top: 20px;
+  }
+
+  .info-box ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  .info-box li {
+    font-size: 18px;
+    margin: 10px 0;
+    color: #444;
+  }
+
+  .info-box strong {
+    color: #000;
+  }
+</style>
+
+<section class="about-section">
+  <div class="container">
+    <div class="section-title">
+      <h2>About Me</h2>
+    </div>
+
+    <p class="about-content">
+      I'm a professional full-stack Python developer with over 6 years of experience in development. 
+      I specialize in building Web Applications using Python and React.js.
+    </p>
+
+    <h3 style="text-align: center; color: MediumSeaGreen;">Feel free to explore my work:</h3>
+
+    <div class="projects">
+      <a href="https://qcportal.mpcz.in">Project Link 1</a>
+      <a href="https://www.shekunj.com">Project Link 2</a>
+    </div>
+
+    <h3 style="text-align: center; color: red;">Connect with me:</h3>
+
+    <div class="social-icons text-center">
+      <a href="https://twitter.com/home" style="color: blue;">
+        <i class="fa fa-twitter"></i>
+    </a>
+    
+    <a href="https://www.linkedin.com/in/shivshankar-chaudhary-9a6146160/" style="color: blue;">
+      <i class="fa fa-linkedin"></i>
+  </a>
+  
+      <a href="https://github.com/shivshankar123ch"><i class="fa fa-github"></i></a>
+      <a href="https://stackoverflow.com/users/20051831/shivshankar-chaudhary" style="color: yellow;">
+        <i class="fa fa-stack-overflow"></i>
+    </a>
+    
+      <a href="https://www.facebook.com/shivankar.chaudhary.007" style="color: red;">
+        <i class="fa fa-instagram"></i>
+    </a>
+    
+    </div>
+
+    <div class="experience">
+      <h3>Experience & Achievements</h3>
+      <div class="scroll-box">
+        <marquee behavior="scroll" direction="up" scrollamount="3" onmouseover="this.stop();" onmouseout="this.start();">
+          <p><strong>Accenture Solutions Pvt Ltd.</strong> (05 Dec 2024 - Present)</p>
+          <h3>Project Details:-</h3><p> (Restructured AI Framework for LLM Applications)</p>
+          <p>Worked on migrating legacy on-prem Sybase Dictionary and integrating Python scripts with LangChain and Redis.</p>
+          <h3>Technologies details</h3><p>(Python Script,LLM,OpenAI,ChatBot,HuggingFace,Vector Store Data,GitLab(CI/CD,Runner,Artifact,.gitlab-ci.yml stages and Variables))</p>
+
+        
+          <p><strong>MDP Infra Pvt Ltd. (MPMKVVCL Bhopal)</strong> (March 2023 - Aug 2024)</p>
+          <p>Python Software Developer</p>
+          <h3>Project details</h3><p>(•	Developed secure chat proxy hosting and multi-factor authentication (MFA) API .
+            •	Sampling and Resampling build of domain to qcportal Electrical Material behalf offer number and Multiple Deliver inspections and Multiple site store like TKC Vender & RCA Vender
+            •	Automated invoice generation and structured inspection of electrical materials.
+            •	Developed secure chat proxy hosting and multi-factor authentication (MFA) API with Azure.
+            •	Built Django-based systems with PostgreSQL, ReactJS, and REST APIs.
+            •	Computer Vision OCR based Digital Energy Meter Reading Text at least 2 decimal and automatic calculate Price and generate Invoice.  
+                         )</p>
+          <h3>Technologies details</h3><p>(Python,Django,RestFramework(API's),PostgreSQL,JavaScript,Html5,CSS3,Git/GitHub Version Control,AWS cloud CI/CD,GitLab CI/CD automation Test,WebHosting,Docker,Pandas,Numpy)</p>
+        
+          <p><strong>Mosphe Technology Pvt Ltd.</strong> (Dec 2021 - Jan 2023)</p>
+          <p>Python Software Developer</p>
+          <h3>Project details</h3><p>(Customize Admin Dashboard JAZZMIN, Ecomerce webapplication,Grocery Mart BigBazaar,University Management,Podcast technology webapplication,Synthdeep,Mehardallo Hospital,Login,Signup,MFA, QR Code, imageRecognition authentication and authorization,Online Cources and Coupons Code development API's,DataExtraction & Webscraping using bs4 module beatifulsoup, )</p>
+          <h3>Technologies details</h3><p>(Python,Django,RestFramework(API's),Flask,FastAPI's,Background Task & Celery,PostgreSQL,GraphQL,JavaScript,Html5,CSS3,React-JS,ES6,AWS Cloud,Docker,Kubernetes)</p>
+
+          <p><strong>Signimus Technologies Pvt. Ltd.</strong> (18 Feb 2015 – 22 Oct 2018)</p>
+          <p>Python Software Developer</p>
+          <h3>Project details</h3><p>(Banking project,ERP Shopping store,add to cart & static and dynamic,Payment Gateway,Hospital Management System,Medical Medicines Management,Matrimonial wedding webapplication,Hotel Booking Webapplication )</p>
+          <h3>Technologies details</h3><p>(Python,Django,PostgreSQL)</p>
+  
+        </marquee>
+        
+
+    <div class="info-box">
+      <h3>Contact Details</h3>
+      <ul>
+        <li><strong>Birthday:</strong> 18 July 1988</li>
+        <li><strong>Email:</strong> chaudharyshivshankarex09@gmail.com</li>
+        <li><strong>Phone:</strong> +91 6206551038</li>
+        <li><strong>City:</strong> Indore, Madhya Pradesh, India</li>
+      </ul>
+    </div>
+
+  </div>
+</section>
+
+{% endblock body %}
